@@ -1,0 +1,27 @@
+{
+    "appetizers": [
+        {"name": "Pinwheels", "ingred": ["Cream Cheese", "Shredded Cheese", "Ham", "Tortilla"], "descrip": "Tortilla topped with cream cheese, shredded cheese and ham. Sliced into bite-sized rounds."},
+        {"name": "Bacon Dip", "ingred": ["Bacon", "Cheese Sauce", "Peppers"], "descrip": "Cheese dip loaded with bacon and red bell peppers. Served with a platter of fresh tortilla chips."},
+        {"name": "Pigs-n-Blanket", "ingred": ["Sausage", "American Cheese", "Pastry Dough"], "descrip": "Sausage topped with american cheese and wrapped in pastry dough. Cooked to golden perfection."}
+    ],
+    "coldSandwiches": [
+        {"name": "Ham and Cheese Sandwich", "ingred": ["Ham", "Your choice of bread", "Your choice of cheese", "Lettuce", "Tomato"], "descrip": "A succulent ham sandwich with your choice of rye, white or whole wheat bread, your choice of american, pepperjack or provolone cheese. Lettuce and tomato on the side."},
+        {"name": "Turkey Sandwich", "ingred": ["Turkey", "Your choice of bread", "Your choice of cheese", "Lettuce", "Tomato", "Pickle"], "descrip": "A cold turkey sandwich with your choice of rye, white or whole wheat bread, your choice of american, pepperjack or provolone cheese. Lettuce, tomato and pickle on the side."},
+        {"name": "Bologna Sandwich", "ingred": ["Bologna", "Your choice of bread", "Your choice of cheese", "Mustard", "Lettuce", "Pickle"], "descrip": "A cold bologna sandwich with your choice of rye, white or whole wheat bread, your choice of american, pepperjack or provolone cheese and mustard. Lettuce and pickle on the side."}
+    ],
+    "hotSandwiches": [
+        {"name": "Philly Cheesesteak", "ingred": ["Sliced beef", "Hoagie Bun", "Onion", "Your choice of cheese"], "descrip": "Sliced beef cooked to perfection on a hoagie bun with your choice of american, pepperjack or provolone cheese and sauteed onions."},
+        {"name": "Meatball Marinara", "ingred": ["Meatballs", "Hoagie Bun", "Marinara Sauce", "Oregano", "Your choice of cheese"], "descrip": "A thick meatball sub sandwich with marinara sauce, your choice of american, pepperjack or provolone cheese topped with oregano all on a hoagie bun."},
+        {"name": "Hot Pastrami Sandwich", "ingred": ["Sliced beef pastrami", "Rye Bread", "Pickle", "Onion", "Mustard", "Your choice of cheese"], "descrip": "Sliced beef pastrami simmered in broth to perfection on rye bread with your choice of american, pepperjack or provolone cheese and mustard. Pickle and onion on the side."}
+    ],
+    "desserts": [
+        {"name": "Cheesecake", "ingred": ["Cream Cheese", "Sour Cream", "Vanilla", "Eggs"], "descrip": "A creamy and smooth cheesecake on a flakey crust."},
+        {"name": "Carrot Cake", "ingred": ["Carrots", "Cinnamon", "Vanilla", "Eggs", "Pecans"], "descrip": "Moist spiced carrot cake."},
+        {"name": "Chocolate Chip Cookie", "ingred": ["Cookie Dough", "Chocolate Chips"], "descrip": "A soft and delicious classic chocolate chip cookie."}
+    ],
+    "drinks": [
+        {"name": "Soda", "ingred": ["Coca-Cola", "Dr. Pepper", "Pepsi", "Mountain Dew"], "descrip": "Your choice of any available soda."},
+        {"name": "Sweet Tea", "ingred": ["Water", "Sugar", "Tea"], "descrip": "A glass of cold sweet tea."},
+        {"name": "Unsweet Tea", "ingred": ["Water", "Tea"], "descrip": "A glass of cold unsweet tea."}
+    ]
+}
