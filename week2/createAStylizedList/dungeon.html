@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Akronim&display=swap" rel="stylesheet"> 
+        <title>D&D Classes</title>
+        <style>
+            body {
+                background: url("https://www.torforgeblog.com/wp-content/uploads/2019/07/DeadliestDragonsFeature-809x492.jpg") no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+            
+            #flexHeader {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #flexMain {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #flexHeader>h1 {
+                font-family: 'Akronim', cursive;
+                font-size: 50px;
+                color: cornsilk;
+            }
+
+            #flexMain>ul {
+                font-family: 'Akronim', cursive;
+                font-size: 23px;
+                background-color: black;
+                color: cornsilk;
+                opacity: 80%;
+                padding: 40px;
+                border: 10px ridge black;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="flexHeader">
+            <h1>Dungeons & Dragons Classes</h1>
+        </div>
+        <main id="flexMain">
+            <ul id="classList"></ul>
+        </main>
+        <script src="dungeon.js"></script>
+    </body>
+</html>
