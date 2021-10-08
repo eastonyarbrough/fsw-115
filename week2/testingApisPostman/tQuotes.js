@@ -53,9 +53,8 @@ let apiData = {
 
 let quoteList = document.querySelector("#quoteList");
 
-for (i=0; i<apiData.non_personalized.length; i++)
-{
+apiData.non_personalized.forEach(function(e, i) {
     let newEntry = document.createElement("li");
     newEntry.textContent = apiData.non_personalized[i];
     quoteList.appendChild(newEntry);
-}
+})
