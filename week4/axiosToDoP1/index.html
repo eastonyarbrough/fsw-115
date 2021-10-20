@@ -5,17 +5,54 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>To-Do List API</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
         <style>
-            h1 {
+            body {
+                background: url("https://images.unsplash.com/photo-1447966129673-88517d4367f0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Z3Jhc3MlMjBwbGFpbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80") no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+
+            #flexDiv {
+                display: flex;
+                justify-content: center;
+            }
+
+            h1, h2, ul {
                 text-align: center;
+                font-family: 'Italianno', cursive;
+            }
+
+            h1 {
+                font-size: 60px;
+                text-decoration: 2px underline wavy;
+            }
+
+            h2 {
+                font-size: 40px;
             }
 
             ul {
-                text-align: center;
+                font-size: 30px;
+            }
+
+            .entry {
+                border: 1px solid black;
+                border-radius: 10px;
+                background-color: bisque;
+                opacity: 80%;
+                margin: 15px 0;
             }
         </style>
     </head>
     <body>
+        <div id="flexDiv">
+            <div id="mainDiv"></div>
+        </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.23.0/axios.min.js"></script>
         <script src="index.js"></script>
     </body>
