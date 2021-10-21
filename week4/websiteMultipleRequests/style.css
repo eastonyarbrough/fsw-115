@@ -1,0 +1,72 @@
+body {
+    background: url("https://miro.medium.com/max/3840/1*_HhnCWCrqDSt__s5wFrKqQ.jpeg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#gridContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 50px 0;
+}
+
+#gridContainer>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#navIcon {
+    padding: 15px;
+}
+
+#flexNav {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#flexHead {
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#fetchBtn {
+    margin: 0 auto;
+    width: 150px;
+    height: 35px;
+    border-radius: 50px;
+    background: linear-gradient(to right, cornflowerblue, darkorchid)
+}
+
+h1, h3 {
+    font-family: 'Cinzel Decorative', cursive;
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+    #gridContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (min-width: 1366px) {
+    #gridContainer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
