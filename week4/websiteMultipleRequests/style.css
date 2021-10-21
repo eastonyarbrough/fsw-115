@@ -1,4 +1,5 @@
-body {
+/* mtg.html styling (mobile) */
+#mtgBody {
     background: url("https://miro.medium.com/max/3840/1*_HhnCWCrqDSt__s5wFrKqQ.jpeg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -19,6 +20,30 @@ body {
     align-items: center;
 }
 
+/* d&d.html styling (mobile) */
+#dndBody {
+    background: url("https://wallpapercave.com/wp/wp3393340.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#dndGridContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 50px 0;
+}
+
+#dndGridContainer>div {
+    border: 10px ridge bisque;
+    border-radius: 20px;
+    background: bisque;
+    opacity: 80%;
+    margin: 20px 0;
+}
+
+/* default styling (mobile) */
 #navIcon {
     padding: 15px;
 }
@@ -44,9 +69,12 @@ body {
     background: linear-gradient(to right, cornflowerblue, darkorchid)
 }
 
-h1, h3 {
+h1, h3, h4, ul {
     font-family: 'Cinzel Decorative', cursive;
     text-align: center;
+    font-weight: bold;
+    line-height: 32px;
+    list-style: none;
 }
 
 h1 {
@@ -58,15 +86,35 @@ h3 {
 }
 
 @media only screen and (min-width: 768px) {
+    /* mtg.html styling (tablet) */
     #gridContainer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
+
+    /* d&d.html styling (tablet) */
+    #dndGridContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 50px 0;
+    }
+
+    #dndGridContainer>div {
+        margin: 20px;
+    }
 }
 
 @media only screen and (min-width: 1366px) {
+    /* mtg.html styling (desktop) */
     #gridContainer {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* d&d.html styling (tablet) */
+    #dndGridContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 50px 0;
     }
 }
