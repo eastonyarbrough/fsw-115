@@ -17,8 +17,8 @@ axios.get("http://api.bryanuniversity.edu/easton/list")
             
             if (res.data[i].isComplete == true)
             {
-                currToDoEntry.setAttribute("style", "text-decoration: line-through")
-                currDetailEntry.setAttribute("style", "text-decoration: line-through")
+                currToDoEntry.setAttribute("style", "text-decoration: line-through");
+                currDetailEntry.setAttribute("style", "text-decoration: line-through");
             }
             
             mainDiv.appendChild(entryDiv);
