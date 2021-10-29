@@ -40,7 +40,8 @@ document.querySelector("#toDoForm").addEventListener("submit", (e) => {
     e.preventDefault();
     axios.post("http://api.bryanuniversity.edu/easton/list", {
         name: document.querySelector("#taskName").value,
-        description: document.querySelector("#taskDesc").value
+        description: document.querySelector("#taskDesc").value,
+        isComplete: false
     })
         .then(res => {
             let newEntry = document.createElement("div");
