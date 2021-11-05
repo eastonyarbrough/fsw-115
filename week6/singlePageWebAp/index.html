@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>D&D Classes</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet"> 
+        <style>
+            body {
+                background: url("https://media.dnd.wizards.com/styles/media_resources/public/dnd_background_overlay2.jpg") no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                font-family: 'MedievalSharp';
+            }
+
+            #gridMain {
+                display: grid;
+                grid-template-columns: 1fr;
+                font-size: 20px;
+            }
+
+            #flexHead {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                font-size: 20px;
+            }
+
+            @media only screen and (min-width: 768px) {
+                #gridMain {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr)
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header id="flexHead">
+            <h1 id="header">
+                Dungeons & Dragons Classes
+            </h1>
+        </header>
+        <main id="gridMain"></main>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"></script>
+        <script src="apiInfo.js"></script>
+    </body>
+</html>
