@@ -23,7 +23,7 @@ axios.get("http://api.bryanuniversity.edu/easton/list")
 
             axios.get(`https://api.unsplash.com/search/photos?page=${randomNum}&query=${splitQuery[queryNum]}&client_id=_piIFyCBqkyKL6-QYu2PBx3jxRs0TFly3acPhJyQh8Y`)
                 .then(result => {
-                    newImg.src = result.data.results[Math.floor(Math.random() * result.data.results.length)].urls.full;
+                    newImg.src = result.data.results[Math.floor(Math.random() * (result.data.results.length - 1))].urls.full;
                 })
             
             let entryDiv = document.createElement("div");
@@ -113,7 +113,7 @@ document.addEventListener("mouseover", () => {
     boxes.forEach((e, i) => {
         boxes[i].addEventListener("change", function() {
             if (boxes[i].checked == true) {
-                boxes[i].parentElement.setAttribute("style", "text-decoration: line-through")
+                boxes[i].parentElement.setAttribute("style", "text-decoration: line-through 2px")
                 axios.put(`http://api.bryanuniversity.edu/easton/list/${idArr[i]}`, {
                     isComplete: true
                 })

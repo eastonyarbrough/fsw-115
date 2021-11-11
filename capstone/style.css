@@ -1,7 +1,7 @@
 #headerBkg {
     width: fit-content;
     height: auto;
-    background-color: bisque;
+    background-color: #c9ecf2;
     margin: 0 auto;
     padding: 0 15px;
     border-radius: 10px;
@@ -46,7 +46,7 @@ ul {
     grid-template-rows: 20px repeat(6, auto) 28px;
     border: 1px solid black;
     border-radius: 10px;
-    background-color: bisque;
+    background-color: #c9ecf2;
     margin: 15px 20px;
     text-align: center;
 }
