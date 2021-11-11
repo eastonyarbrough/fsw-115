@@ -18,18 +18,18 @@ axios.get("http://api.bryanuniversity.edu/easton/list")
         res.data.forEach((e, i) => {
             let splitQuery = res.data[i].name.split(" ");
             let queryNum = splitQuery.length - 1;
-            let chosenPhoto;
+            let randomNum = Math.floor((Math.random() * 10) + 1);
+            let newImg = document.createElement("img");
 
-            axios.get(`https://api.unsplash.com/search/photos?page=1&query=${splitQuery[queryNum]}&client_id=_piIFyCBqkyKL6-QYu2PBx3jxRs0TFly3acPhJyQh8Y`)
+            axios.get(`https://api.unsplash.com/search/photos?page=${randomNum}&query=${splitQuery[queryNum]}&client_id=_piIFyCBqkyKL6-QYu2PBx3jxRs0TFly3acPhJyQh8Y`)
                 .then(result => {
-                    chosenPhoto = result.data.results[Math.floor(Math.random() * result.data.results.length)].urls.full;
+                    newImg.src = result.data.results[Math.floor(Math.random() * result.data.results.length)].urls.full;
                 })
-
+            
             let entryDiv = document.createElement("div");
             let currToDoEntry = document.createElement("h2");
             let detailList = document.createElement("ul");
             let currDetailEntry = document.createElement("li");
-            let newImg = document.createElement("img");
             let deleteBtn = document.createElement("button");
             compCheck = document.createElement("input");
             currToDoEntry.textContent = res.data[i].name;
@@ -37,7 +37,6 @@ axios.get("http://api.bryanuniversity.edu/easton/list")
             deleteBtn.textContent = "Delete";
             entryDiv.setAttribute("class", "entry");
             compCheck.setAttribute("type", "checkbox");
-            newImg.setAttribute("src", chosenPhoto);
             deleteBtn.setAttribute("class", "delBtn");
 
             if (res.data[i].isComplete == true) {
@@ -52,7 +51,7 @@ axios.get("http://api.bryanuniversity.edu/easton/list")
             entryDiv.appendChild(newImg);
             entryDiv.appendChild(deleteBtn);
             detailList.appendChild(currDetailEntry);
-
+            
             idArr.push(res.data[i]._id);
         });
     })
@@ -67,6 +66,17 @@ document.querySelector("#toDoForm").addEventListener("submit", (e) => {
         isComplete: false
     })
         .then(res => {
+            let splitQuery = res.data.name.split(" ");
+            let queryNum = splitQuery.length - 1;
+            let randomNum = Math.floor((Math.random() * 10) + 1);
+            let newImg = document.createElement("img");
+
+            axios.get(`https://api.unsplash.com/search/photos?page=${randomNum}&query=${splitQuery[queryNum]}&client_id=_piIFyCBqkyKL6-QYu2PBx3jxRs0TFly3acPhJyQh8Y`)
+                .then(result => {
+                    newImg.src = result.data.results[Math.floor(Math.random() * result.data.results.length)].urls.full;
+                })
+
+
             let newEntry = document.createElement("div");
             let newTaskName = document.createElement("h2");
             let newDetailList = document.createElement("ul");
@@ -86,6 +96,7 @@ document.querySelector("#toDoForm").addEventListener("submit", (e) => {
             newEntry.appendChild(newCheck);
             newEntry.appendChild(newTaskName);
             newEntry.appendChild(newDetailList);
+            newEntry.appendChild(newImg);
             newEntry.appendChild(newDelBtn);
             newDetailList.appendChild(newTaskDesc);
 

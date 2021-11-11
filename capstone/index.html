@@ -7,20 +7,23 @@
         <title>To-Do List API</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <div id=headerBkg>
+            <h1>To-Do List!</h1>
+        </div>
+        <div id="flexForm">
+            <form id="toDoForm">
+                <input type="text" placeholder="Task to complete" id="taskName">
+                <input type="text" placeholder="Description of task" id="taskDesc">
+                <button id="submit">Add Task</button>
+            </form>
+        </div>
         <div id="flexDiv">
             <div id="mainDiv">
-                <h1>To-Do List!</h1>
-                <div id="flexForm">
-                    <form id="toDoForm">
-                        <input type="text" placeholder="Task to complete" id="taskName">
-                        <input type="text" placeholder="Description of task" id="taskDesc">
-                        <button id="submit">Add Task</button>
-                    </form>
-                </div>
+                
             </div>
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.23.0/axios.min.js"></script>

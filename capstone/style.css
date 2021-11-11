@@ -1,3 +1,12 @@
+#headerBkg {
+    width: fit-content;
+    height: auto;
+    background-color: bisque;
+    margin: 0 auto;
+    padding: 0 15px;
+    border-radius: 10px;
+}
+
 #flexDiv {
     display: flex;
     justify-content: center;
@@ -9,14 +18,18 @@
     align-items: center;
 }
 
+#mainDiv {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
 h1, h2, ul {
     text-align: center;
-    font-family: 'Italianno', cursive;
+    font-family: 'Lobster'
 }
 
 h1 {
     font-size: 60px;
-    text-decoration: 2px underline wavy;
 }
 
 h2 {
@@ -28,9 +41,51 @@ ul {
 }
 
 .entry {
+    display: grid;
+    grid-template-columns: 20px repeat(4, auto) 55px;
+    grid-template-rows: 20px repeat(6, auto) 28px;
     border: 1px solid black;
     border-radius: 10px;
     background-color: bisque;
-    opacity: 80%;
-    margin: 15px 0;
+    margin: 15px 20px;
+    text-align: center;
+}
+
+.entry>img {
+    width: 75%;
+    height: auto;
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 4;
+    grid-row-end: 8;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.entry>input {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.entry>h2 {
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.entry>ul {
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.entry>button {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 8;
+    grid-row-end: 9;
 }
