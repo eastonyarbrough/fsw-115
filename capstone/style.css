@@ -1,0 +1,36 @@
+#flexDiv {
+    display: flex;
+    justify-content: center;
+}
+
+#flexForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h2, ul {
+    text-align: center;
+    font-family: 'Italianno', cursive;
+}
+
+h1 {
+    font-size: 60px;
+    text-decoration: 2px underline wavy;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+ul {
+    font-size: 30px;
+}
+
+.entry {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: bisque;
+    opacity: 80%;
+    margin: 15px 0;
+}
