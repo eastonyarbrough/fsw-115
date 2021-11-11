@@ -20,7 +20,7 @@
 
 #mainDiv {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
 }
 
 h1, h2, ul {
@@ -88,4 +88,16 @@ ul {
     grid-column-end: 7;
     grid-row-start: 8;
     grid-row-end: 9;
+}
+
+@media only screen and (min-width: 768px) {
+    #mainDiv {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 1366px) {
+    #mainDiv {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

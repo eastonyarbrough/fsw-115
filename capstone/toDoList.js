@@ -141,9 +141,3 @@ document.addEventListener("mouseover", () => {
         })
     })
 })
-
-
-
-
-///search API
-//https://api.unsplash.com/search/photos?page=1&query=kitchen&client_id=_piIFyCBqkyKL6-QYu2PBx3jxRs0TFly3acPhJyQh8Y
